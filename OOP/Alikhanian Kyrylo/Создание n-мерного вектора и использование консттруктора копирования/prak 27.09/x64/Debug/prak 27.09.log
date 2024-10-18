@@ -1,4 +1,0 @@
-﻿  prak 27.09.cpp
-C:\Users\kruto\source\repos\prak 27.09\prak 27.09.cpp(36,14): warning C4244: +=: преобразование "double" в "int", возможна потеря данных
-C:\Users\kruto\source\repos\prak 27.09\prak 27.09.cpp(38,14): warning C4244: return: преобразование "double" в "int", возможна потеря данных
-  prak 27.09.vcxproj -> C:\Users\kruto\source\repos\prak 27.09\x64\Debug\prak 27.09.exe
