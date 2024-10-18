@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\kruto\\source\\repos\\prak 27.09\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{95F705D6-75FA-4ABA-A557-91EB96885CF3}|prak 27.09.vcxproj|C:\\Users\\kruto\\source\\repos\\prak 27.09\\prak 27.09.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{95F705D6-75FA-4ABA-A557-91EB96885CF3}|prak 27.09.vcxproj|solutionrelative:prak 27.09.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "prak 27.09.cpp",
+              "DocumentMoniker": "C:\\Users\\kruto\\source\\repos\\prak 27.09\\prak 27.09.cpp",
+              "RelativeDocumentMoniker": "prak 27.09.cpp",
+              "ToolTip": "C:\\Users\\kruto\\source\\repos\\prak 27.09\\prak 27.09.cpp",
+              "RelativeToolTip": "prak 27.09.cpp",
+              "ViewState": "AgIAADkAAAAAAAAAAAAAAFMAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-09-27T09:39:51.027Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

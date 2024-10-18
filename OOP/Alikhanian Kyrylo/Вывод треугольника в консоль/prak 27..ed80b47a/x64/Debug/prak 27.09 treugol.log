@@ -1,0 +1,3 @@
+﻿  prak 27.09 treugol.cpp
+C:\Users\kruto\source\repos\prak 27.09 treugol\prak 27.09 treugol.cpp(17,12): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+  prak 27.09 treugol.vcxproj -> C:\Users\kruto\source\repos\prak 27.09 treugol\x64\Debug\prak 27.09 treugol.exe

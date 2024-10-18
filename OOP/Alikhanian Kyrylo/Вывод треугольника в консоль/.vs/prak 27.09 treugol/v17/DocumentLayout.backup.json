@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\kruto\\source\\repos\\prak 27.09 treugol\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{ED80B47A-664A-4A16-9EC0-2B3056F09355}|prak 27.09 treugol.vcxproj|C:\\Users\\kruto\\source\\repos\\prak 27.09 treugol\\prak 27.09 treugol.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{ED80B47A-664A-4A16-9EC0-2B3056F09355}|prak 27.09 treugol.vcxproj|solutionrelative:prak 27.09 treugol.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "prak 27.09 treugol.cpp",
+              "DocumentMoniker": "C:\\Users\\kruto\\source\\repos\\prak 27.09 treugol\\prak 27.09 treugol.cpp",
+              "RelativeDocumentMoniker": "prak 27.09 treugol.cpp",
+              "ToolTip": "C:\\Users\\kruto\\source\\repos\\prak 27.09 treugol\\prak 27.09 treugol.cpp",
+              "RelativeToolTip": "prak 27.09 treugol.cpp",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABAAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-09-27T13:29:17.778Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

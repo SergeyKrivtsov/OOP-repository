@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\kruto\\source\\repos\\Project1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5B20FD1F-AD93-4586-A13F-752C673D66DE}|Project1.vcxproj|C:\\Users\\kruto\\source\\repos\\Project1\\FileName.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{5B20FD1F-AD93-4586-A13F-752C673D66DE}|Project1.vcxproj|solutionrelative:FileName.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FileName.cpp",
+              "DocumentMoniker": "C:\\Users\\kruto\\source\\repos\\Project1\\FileName.cpp",
+              "RelativeDocumentMoniker": "FileName.cpp",
+              "ToolTip": "C:\\Users\\kruto\\source\\repos\\Project1\\FileName.cpp",
+              "RelativeToolTip": "FileName.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAG0AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-09-03T05:57:34.812Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
