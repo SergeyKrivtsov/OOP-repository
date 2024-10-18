@@ -1,4 +1,0 @@
-﻿  FileName.cpp
-C:\Users\kruto\source\repos\prak13.09\FileName.cpp(77,6): warning C4326: возвращаемый тип "main" должен быть "int", а не "void"
-C:\Users\kruto\source\repos\prak13.09\FileName.cpp(73,1): warning C4715: Human::Schitat: значение возвращается не при всех путях выполнения
-  prak13.09.vcxproj -> C:\Users\kruto\source\repos\prak13.09\x64\Debug\prak13.09.exe
