@@ -1,0 +1,164 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <stdbool.h>
+
+// Визначення структури вузла списку
+typedef struct node {
+    int val;             // Значення вузла
+    struct node *next;   // Вказівник на наступний вузол
+} node_t;
+
+// Функція для додавання елемента в кінець списку
+void push(node_t **head, int val) {
+    node_t *temp = *head;
+    node_t *new_node = (node_t *)malloc(sizeof(node_t));
+    if (new_node == NULL) {
+        printf("Помилка: Не вдалося виділити пам'ять для нового вузла.\n");
+        return;
+    }
+    new_node->val = val;
+    new_node->next = NULL;
+
+    if (*head == NULL) {
+        // Якщо список порожній, новий вузол стає головою
+        *head = new_node;
+    } else {
+        // Прохід до останнього вузла
+        while (temp->next != NULL) {
+            temp = temp->next;
+        }
+        temp->next = new_node;
+    }
+}
+
+// Функція для виведення списку
+void print(node_t *head) {
+    if (head == NULL) {
+        printf("Список порожній.\n");
+        return;
+    }
+    node_t *temp = head;
+    while (temp != NULL) {
+        printf("%d ", temp->val);
+        temp = temp->next;
+    }
+    printf("\n");
+}
+
+// Функція для видалення останнього елемента списку
+void poplast(node_t **head) {
+    if (*head == NULL) {
+        printf("Помилка: Список порожній.\n");
+        return;
+    }
+    if ((*head)->next == NULL) {
+        // Якщо в списку один елемент
+        free(*head);
+        *head = NULL;
+        return;
+    }
+    node_t *temp = *head;
+    while (temp->next->next != NULL) {
+        temp = temp->next;
+    }
+    free(temp->next);
+    temp->next = NULL;
+}
+
+// Функція для пошуку вузла за значенням
+node_t *find(node_t *head, int value) {
+    node_t *node = head;
+    while (node != NULL) {
+        if (node->val == value) {
+            return node;
+        }
+        node = node->next;
+    }
+    return NULL;
+}
+
+// Функція для видалення елементів за значенням
+void popByVal(node_t **head, int val) {
+    if (*head == NULL) {
+        printf("Помилка: Список порожній.\n");
+        return;
+    }
+    node_t *temp = *head;
+    node_t *to_delete;
+
+    // Видалення елементів з початку списку
+    while (temp != NULL && temp->val == val) {
+        *head = temp->next;
+        free(temp);
+        temp = *head;
+    }
+
+    // Видалення інших елементів
+    while (temp != NULL && temp->next != NULL) {
+        if (temp->next->val == val) {
+            to_delete = temp->next;
+            temp->next = temp->next->next;
+            free(to_delete);
+        } else {
+            temp = temp->next;
+        }
+    }
+}
+
+// Функція сортування бульбашкою
+void sort_bubble(node_t *head) {
+    if (head == NULL || head->next == NULL) {
+        printf("Список порожній або складається з одного елемента, сортування не потрібна.\n");
+        return;
+    }
+    bool swapped;
+    node_t *temp;
+    node_t *last = NULL;
+
+    do {
+        swapped = false;
+        temp = head;
+
+        while (temp->next != last) {
+            if (temp->val > temp->next->val) {
+                // Міняємо значення вузлів, якщо вони не відсортовані
+                int temp_val = temp->val;
+                temp->val = temp->next->val;
+                temp->next->val = temp_val;
+                swapped = true;
+            }
+            temp = temp->next;
+        }
+        last = temp;
+    } while (swapped);
+}
+
+int main() {
+    node_t *head = NULL; // Ініціалізація голови списку
+
+    int range_of_list = 0, t = 0, del;
+    printf("Задайте, будь ласка, розмір нашого списку (кількість елементів): ");
+    scanf("%d", &range_of_list);
+
+    printf("Зараз ви будете заповнювати наш список. Прошу вводити будь-які цілі значення\n");
+    for (int i = 1; i <= range_of_list; i++) {
+        scanf("%d", &t);
+        push(&head, t);
+    }
+
+    printf("Наш список виглядає наступним чином:\n");
+    print(head);
+
+    printf("\nВиберіть, який/які елемент/и ви хочете видалити.\n");
+    printf("Наприклад, вибравши цифру 2, наступна функція видалить усі двійки в нашому списку: ");
+    scanf("%d", &del);
+    popByVal(&head, del);
+    printf("Список після видалення елемента:\n");
+    print(head);
+
+    printf("\nЗараз відбудеться бульбашкове сортування нашого списку. Тоді він буде виглядати наступним чином:\n");
+    sort_bubble(head);
+    print(head);
+
+    return 0;
+}
