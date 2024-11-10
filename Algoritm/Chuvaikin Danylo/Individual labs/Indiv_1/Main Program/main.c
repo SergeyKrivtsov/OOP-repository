@@ -1,3 +1,14 @@
+/*
+Наказ про відрахування. Є набір текстових файлів – відомості з
+предметів. Ім'я файлу містить назву предмета, а файл містить набір рядків,
+у кожному з яких ПІБ студента та його оцінка з цього предмета. Потрібно
+створити інформацію для наказу на відрахування у вигляді списку
+списків; список ПІБ студентів, упорядкований за абеткою, і для кожного
+студента – список назв предметів, за якими у нього хвіст (менше 50 балів).
+Забезпечити операції додавання, видалення та розумного пошуку
+інформації, виведення інформації в розумному вигляді (наприклад, список
+всіх «хвостів» з конкретного предмету з кількістю балів).
+*/
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -75,8 +86,10 @@ StudentRecord* findStudent(StudentRecord* head, const char* name){
 void extractSubjectName(const char* filename, char* subject){
     strncpy(subject, filename, MAX_SUBJ_LEN - 1);
     subject[MAX_SUBJ_LEN - 1] = '\0';
-    char* dotPosition = strrchr(subject, '.');
-    if (dotPosition) *dotPosition = '\0';
+    char* dot = strrchr(subject, '.');
+    if (dot){
+        *dot = '\0';
+    }
 }
 
 // Зчитування файлу з оцінками для предмета
@@ -114,7 +127,7 @@ void readSubjectFile(StudentRecord** head, const char* filename){
 }
 
 // Друк студентів із хвостами по предметах
-void printStudentsWithFails(StudentRecord* head){
+void printStudentsWithTales(StudentRecord* head){
     printf("List of students with failing grades:\n");
     while (head != NULL){
         int hasFails = 0;
@@ -155,10 +168,8 @@ void addStudentToFile(StudentRecord** head){
     printf("Enter the subject filename (e.g., math): ");
     fgets(filename, sizeof(filename), stdin);
     filename[strcspn(filename, "\n")] = '\0';
-
     char fullFilename[MAX_SUBJ_LEN + 5];
     snprintf(fullFilename, sizeof(fullFilename), "%s.txt", filename);
-
     FILE* file = fopen(fullFilename, "r");
     if (file == NULL){
         printf("File %s does not exist. Do you want to create it? (y/n): ", fullFilename);
@@ -321,7 +332,7 @@ void menu(StudentRecord** head){
                 deleteStudent(head, name, subject);
                 break;
             case 3:
-                printStudentsWithFails(*head);
+                printStudentsWithTales(*head);
                 break;
             case 4:
                 printf("Enter subject name to search for failing students: ");
