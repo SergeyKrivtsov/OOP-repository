@@ -6,4 +6,3 @@ Dbalinov Oleg Olegovich 44
 Testov Test Testik 100
 Testov1 Test1 Testik1 100
 Ja Ja Jak 30
-Danylo Chuvaikin Danylo 10
