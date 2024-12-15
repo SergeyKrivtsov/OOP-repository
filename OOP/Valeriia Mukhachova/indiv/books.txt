@@ -1,0 +1,9 @@
+Fiction,1984,George Orwell,Dystopian
+NonFiction,Sapiens,Yuval Noah Harari,History
+Fiction,The Hobbit,J.R.R. Tolkien,Fantasy
+Fiction,Harry Potter and the Sorcerer's Stone,J.K. Rowling,Fantasy
+NonFiction,Cosmos,Carl Sagan,Science
+NonFiction,The Selfish Gene,Richard Dawkins,Biology
+Fiction,The Name of the Wind,Patrick Rothfuss,Fantasy
+Fiction,A Song of Ice and Fire,George R.R. Martin,Fantasy
+Fiction,Howl's Moving Castle,Diana Wynne Jones,Fantasy
