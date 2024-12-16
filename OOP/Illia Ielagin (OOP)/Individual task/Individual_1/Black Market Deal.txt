@@ -1,0 +1,11 @@
+Iron Sword
+4
+2
+100
+Buy in Martlock, sell in Caerleon
+Black Market Deal
+Normal
+500.00
+700.00
+1
+0
