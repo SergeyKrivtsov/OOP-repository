@@ -1,0 +1,15 @@
+106 Ivan Petrenko Kyiv +380671234567
+57 Olena Shevchenko Lviv +380632345678
+305 Andriy Ivanchuk Odessa +380931234567
+42 Oksana Mykhailyuk Dnipro +380503456789
+73 Taras Hrytsenko Chernihiv +380509876543
+84 Anastasiya Koval Rivne +380671112223
+97 Dmytro Sydorenko Kharkiv +380638765432
+115 Kateryna Marchenko Zhytomyr +380931234555
+123 Mykola Radchenko Poltava +380507654321
+141 Svitlana Bondarenko Chernivtsi +380506789012
+162 Pavlo Kryvoruchko Ternopil +380633213141
+170 Viktoriya Lysenko Uzhhorod +380678901234
+189 Oleksandr Vasylenko Kharkiv +380639876123
+194 Inna Zhuk Kropyvnytskyi +380504321678
+201 Bohdan Melnyk Lutsk +380502345678
